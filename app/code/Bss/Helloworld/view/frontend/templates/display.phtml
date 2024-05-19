@@ -1,0 +1,13 @@
+<?php
+$name = $block->getName();
+$dob = $block->getDob();
+$address= $block->getAddress();
+$description= $block->getDescription();
+
+?>
+
+<p>Name: <?= $escaper->escapeHtml($name) ?></p>
+<p>DOB: <?= $escaper->escapeHtml($dob) ?></p>
+<p>Address: <?= $escaper->escapeHtml($address) ?></p>
+<p>Description: <?= $escaper->escapeHtml($description) ?></p>
+
