@@ -1,0 +1,39 @@
+<?php ?>
+<div class="container-product">
+    <form class="add-product">
+        <label>Name</label>
+        <input type="text" name="name" id="name" placeholder="Name" >
+        <label>Price</label>
+        <input type="text" name="price" id="price" placeholder="Enter Price">
+        <label>Description</label>
+        <input type="text" name="description" id="description" placeholder="Enter Description">
+        <label>Image</label>
+        <input type="text" name="image" id="image" placeholder="Enter Link Image" >
+        <button id="btn-add-product" class="btn">Add Product</button>
+    </form>
+    <div class="table">
+        <table id="table-product" class="table-product">
+            <thead>
+            <tr>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Description</td>
+                <td>Image</td>
+                <td>Action</td>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script type="text/x-magento-init">
+{
+    ".add-product": {
+        "addProduct": {
+        }
+    }
+}
+</script>
+

@@ -1,0 +1,33 @@
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+.container-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .add-product {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 40%;
+    }
+    .table {
+        width: 50%;
+        .table-product {
+            thead {
+                font-size: 18px;
+            }
+            tbody {
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            td {
+                border: 1px solid @border-color__base;
+            }
+        }
+    }
+}
